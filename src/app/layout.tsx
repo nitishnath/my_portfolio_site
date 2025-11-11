@@ -16,11 +16,11 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),
   title: {
-    default: "Nitish Kumar Nath – Software Engineer",
+    default: "Nitish Kumar Nath – Frontend Engineer",
     template: "%s | Portfolio",
   },
   description:
-    "Professional portfolio showcasing projects, skills, resume, and contact details with rich animations.",
+    "Professional frontend engineer portfolio showcasing projects, skills, resume, and contact details with rich animations.",
   openGraph: {
     title: "Nitish Kumar Nath – Portfolio",
     description:

@@ -26,15 +26,16 @@ export default function AboutPanel() {
       <div className="mt-3 h-1 w-16 rounded bg-yellow-400/80" />
 
       <motion.p className="mt-4 text-zinc-300" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-        I’m a software engineer with excellent problem‑solving skills and a strong focus on
-        collaboration. I’m passionate about coding and continual learning. I have hands-on
-        experience building products with React, Next.js and mobile UIs with React Native,
-        with a solid background in modern front‑end architectures and performance.
+        An experienced Frontend Engineer (3+ years) specializing in React.js, Next.js, and React Native, with a
+strong focus on crafting accessible (WCAG-compliant, ARIA labels), scalable, and high-performance applications.
+Skilled in using Redux Toolkit for optimized state management and GraphQL for efficient API communication.
+Passionate about building intuitive user interfaces, enhancing performance, and maintaining clean, modular codebases
+in SaaS, inventory, and AdTech domains.
       </motion.p>
-      <motion.p className="mt-4 text-zinc-300" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      {/* <motion.p className="mt-4 text-zinc-300" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         My job is to build products that are functional, user‑friendly, and efficient,
         while also maintaining an attractive design. Outside of work, I enjoy sports and movies.
-      </motion.p>
+      </motion.p> */}
 
       <motion.h3 className="mt-8 text-xl font-semibold text-white" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
         What I’m Doing
