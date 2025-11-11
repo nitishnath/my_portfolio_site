@@ -38,7 +38,7 @@ export default function SidebarProfile() {
             {
               label: "GitHub",
               value: "github.com/nitishkumarnath",
-              href: "https://github.com/nitishkumarnath",
+              href: "https://github.com/nitishnath",
               icon: "🐙",
             },
           ].map((item) => (
