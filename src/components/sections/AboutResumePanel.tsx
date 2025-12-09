@@ -72,11 +72,11 @@ export default function AboutResumePanel() {
   const heading = tab === "about" ? "About Me" : "Resume";
 
   return (
-    <section className="rounded-2xl bg-zinc-900 p-4 pb-24 md:pb-8 shadow-xl ring-1 ring-white/10">
+    <section className="rounded-2xl bg-zinc-900 p-8 pb-24 md:pb-8 shadow-xl ring-1 ring-white/10">
       {/* Header row: title + tabs on the same line */}
       <div className="flex items-start justify-between">
         <div>
-          <motion.h2 className="text-2xl md:text-4xl text-white font-bold" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+          <motion.h2 className="text-2xl md:text-2xl text-white font-bold" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
             {heading}
           </motion.h2>
           <div className="mt-4 h-1.5 w-20 rounded bg-yellow-400/80" />
