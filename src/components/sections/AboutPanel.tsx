@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 function Card({ title, subtitle }: { title: string; subtitle: string }) {
   return (
     <motion.div
-      className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-md"
+      className="flex items-center gap-4 rounded-2xl border border-zinc-700 bg-zinc-800 p-5 shadow-md"
       whileHover={{ y: -2 }}
     >
-      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-yellow-300">★</div>
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-700/60 text-yellow-300">★</div>
       <div>
         <p className="font-semibold text-white">{title}</p>
         <p className="text-sm text-zinc-400">{subtitle}</p>
@@ -19,8 +19,8 @@ function Card({ title, subtitle }: { title: string; subtitle: string }) {
 
 export default function AboutPanel() {
   return (
-    <section className="rounded-2xl bg-white/5 p-6 shadow-xl ring-1 ring-white/10">
-      <motion.h2 className="text-2xl font-bold" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+    <section className="rounded-2xl bg-zinc-900 p-6 shadow-xl ring-1 ring-zinc-800">
+      <motion.h2 className="text-2xl font-bold text-white" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
         About Me
       </motion.h2>
       <div className="mt-3 h-1 w-16 rounded bg-yellow-400/80" />
