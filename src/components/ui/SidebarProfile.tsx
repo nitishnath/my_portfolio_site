@@ -6,7 +6,7 @@ import myPic from "../../images/my_pic.jpeg";
 
 export default function SidebarProfile() {
   return (
-    <aside className="rounded-2xl bg-zinc-900 p-8 shadow-xl ring-1 ring-white/10 lg:sticky lg:top-8 self-start">
+    <aside className="rounded-2xl bg-zinc-900 p-8 shadow-xl ring-1 ring-zinc-800 lg:sticky lg:top-8 self-start">
       <div className="mx-auto flex flex-col items-center text-center">
         <motion.div
           className="h-32 w-32 rounded-full overflow-hidden shadow-lg"
@@ -22,7 +22,7 @@ export default function SidebarProfile() {
           />
         </motion.div>
         <h2 className="mt-5 text-xl font-semibold text-white">Nitish Kumar Nath</h2>
-        <p className="mt-2 rounded-full bg-white/10 px-4 py-1.5 text-base text-zinc-300">Frontend Engineer</p>
+        <p className="mt-2 rounded-full bg-zinc-800 px-4 py-1.5 text-base text-zinc-300">Frontend Engineer</p>
 
         <div className="mt-8 space-y-5 w-full">
           {[
@@ -44,7 +44,7 @@ export default function SidebarProfile() {
           ].map((item) => (
             <div key={item.label} className="rounded-xl border border-zinc-700 bg-zinc-800 px-4 py-3 md:flex md:items-center md:justify-between">
               <div className="flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-md bg-zinc-700 text-yellow-300">
+                <div className="flex h-8 w-8 items-center justify-center rounded-md bg-zinc-700/60 text-yellow-300">
                   <span aria-hidden>{item.icon}</span>
                 </div>
                 <span className="text-sm md:text-base text-zinc-400">{item.label}</span>
