@@ -72,17 +72,17 @@ export default function AboutResumePanel() {
   const heading = tab === "about" ? "About Me" : "Resume";
 
   return (
-    <section className="rounded-2xl bg-zinc-900 p-8 md:p-8 shadow-xl ring-1 ring-white/10">
+    <section className="rounded-2xl bg-zinc-900 p-4 pb-24 md:pb-8 shadow-xl ring-1 ring-white/10">
       {/* Header row: title + tabs on the same line */}
       <div className="flex items-start justify-between">
         <div>
-          <motion.h2 className="text-3xl md:text-4xl font-bold" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+          <motion.h2 className="text-3xl md:text-4xl text-white font-bold" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
             {heading}
           </motion.h2>
           <div className="mt-4 h-1.5 w-20 rounded bg-yellow-400/80" />
         </div>
-
-        <div className="flex items-center gap-3">
+        {/* Desktop tab switcher stays top-right */}
+        <div className="hidden md:flex items-center gap-3">
           {tab === "resume" && (
             <a
               href="https://drive.google.com/uc?export=download&id=1ijICpnPn8bQsDoBMpg5iIUQ7-KOj9tXD"
@@ -191,6 +191,27 @@ in SaaS, inventory, and AdTech domains.
           </div>
         )}
       </motion.div>
+
+      {/* Mobile bottom sticky tab bar */}
+      <div className="fixed inset-x-0 bottom-0 z-50 md:hidden">
+        <div className="border-t border-zinc-800 bg-zinc-900/95 backdrop-blur supports-backdrop-filter:bg-zinc-900/80">
+          <div className="mx-auto max-w-screen-sm flex justify-center gap-8 py-4">
+            {[
+              { key: "about", label: "About" },
+              { key: "resume", label: "Resume" },
+            ].map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => setTab(key as "about" | "resume")}
+                className={`${tab === key ? "text-yellow-400" : "text-zinc-300"} text-base font-medium`}
+                aria-pressed={tab === key}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
