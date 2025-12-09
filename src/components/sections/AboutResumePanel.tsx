@@ -76,7 +76,7 @@ export default function AboutResumePanel() {
       {/* Header row: title + tabs on the same line */}
       <div className="flex items-start justify-between">
         <div>
-          <motion.h2 className="text-3xl md:text-4xl text-white font-bold" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+          <motion.h2 className="text-2xl md:text-4xl text-white font-bold" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
             {heading}
           </motion.h2>
           <div className="mt-4 h-1.5 w-20 rounded bg-yellow-400/80" />
